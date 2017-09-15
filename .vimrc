@@ -13,8 +13,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'ervandew/screen'
-Plugin 'jalvesaq/Nvim-R'
+" Plugin 'ervandew/screen'
+" Plugin 'jalvesaq/Nvim-R'
 
 " Plugin 'jalvesaq/Nvim-R'
 " Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
