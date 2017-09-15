@@ -21,7 +21,7 @@ the bash dotfile.
 At the same time, I noticed that I was deathly afraid
 of learning how to use github. This project aims to kill
 two birds with a single stone -> or maybe the whole flock
-with one rock.
+with one rock. User beware - you're in for a scare.
 
 ##  Instructions:
 To use these dotfiles, start by backing up your current files:
