@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-- [About] (#about)
-- [Installation/use] (#installation-and-use)
-- [Meet the dev] (#ego)
+- [About]
+- [Installation/use]
+- [Meet the DANIEL]
 
 ## About
 
@@ -23,7 +23,7 @@ of learning how to use github. This project aims to kill
 two birds with a single stone -> or maybe the whole flock
 with one rock.
 
-##  INSTRUCTIONS:
+##  Instructions:
 To use these dotfiles, start by backing up your current files:
 
 $ cp .bashrc backup.bashrc
