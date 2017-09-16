@@ -2,7 +2,7 @@
 iatest=$(expr index "$-" i)
 
 #######################################################
-# SOURCED ALIAS'S AND SCRIPTS
+# SOURCED ALIASES AND SCRIPTS
 #######################################################
 
 # Source global definitions
@@ -73,22 +73,22 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
 #######################################################
-# MACHINE SPECIFIC ALIAS'S
+# MACHINE SPECIFIC ALIASES
 #######################################################
 
 # Alias's for SSH
-# alias SERVERNAME='ssh YOURWEBSITE.com -l USERNAME -p PORTNUMBERHERE'
+# alias SERVERNAME='ssh users.cs.umb.edu -l dbrown'
 
 # Alias's to change the directory
 alias web='cd /var/www/html'
 
-# Alias's to mount ISO files
+# Aliases to mount ISO files
 # mount -o loop /home/NAMEOFISO.iso /home/ISOMOUNTDIR/
 # umount /home/NAMEOFISO.iso
 # (Both commands done as root only.)
 
 #######################################################
-# GENERAL ALIAS'S
+# GENERAL ALIASES
 #######################################################
 # To temporarily bypass an alias, we preceed the command with a \
 # EG: the ls command is aliased, but to use the normal ls command you would type \ls
