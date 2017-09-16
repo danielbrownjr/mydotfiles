@@ -76,10 +76,10 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # MACHINE SPECIFIC ALIASES
 #######################################################
 
-# Alias's for SSH
+# Aliases for SSH
 # alias SERVERNAME='ssh users.cs.umb.edu -l dbrown'
 
-# Alias's to change the directory
+# Aliases to change the directory
 alias web='cd /var/www/html'
 
 # Aliases to mount ISO files
@@ -115,10 +115,9 @@ alias ps='ps auxf'
 alias ping='ping -c 10'
 alias less='less -R'
 alias cls='clear'
-alias apt-get='sudo apt-get'
+alias apt='sudo apt'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
-alias vi='vim'
 alias svi='sudo vi'
 alias vis='vim "+set si"'
 
