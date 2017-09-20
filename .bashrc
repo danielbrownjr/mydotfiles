@@ -76,13 +76,13 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # MACHINE SPECIFIC ALIASES
 #######################################################
 
-# Aliases for SSH
-# alias SERVERNAME='ssh users.cs.umb.edu -l dbrown'
+# Alias's for SSH
+# alias SERVERNAME='ssh dbrown@users.cs.umb.edu'
 
-# Aliases to change the directory
+# Alias's to change the directory
 alias web='cd /var/www/html'
 
-# Aliases to mount ISO files
+# Alias's to mount ISO files
 # mount -o loop /home/NAMEOFISO.iso /home/ISOMOUNTDIR/
 # umount /home/NAMEOFISO.iso
 # (Both commands done as root only.)
@@ -98,15 +98,15 @@ alias web='cd /var/www/html'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Edit this .bashrc file
-alias ebrc='edit ~/.bashrc'
+alias bashrc='edit ~/.bashrc'
 
 # Show help for this .bashrc file
 alias hlp='less ~/.bashrc_help'
 
 # alias to show the date
-alias da='date "+%Y-%m-%d %A %T %Z"'
+alias dt='date "+%Y-%m-%d %A %T %Z"'
 
-# Alias's to modified commands
+# Aliases to modified commands
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -iv'
@@ -116,9 +116,9 @@ alias ping='ping -c 10'
 alias less='less -R'
 alias cls='clear'
 alias apt='sudo apt'
+alias update='sudo apt update -y && sudo apt upgrade -y'
 alias multitail='multitail --no-repeat -c'
-alias freshclam='sudo freshclam'
-alias svi='sudo vi'
+alias svim='sudo vi'
 alias vis='vim "+set si"'
 
 # Change directory aliases
@@ -135,7 +135,7 @@ alias bd='cd "$OLDPWD"'
 # Remove a directory and all files
 alias rmd='/bin/rm  --recursive --force --verbose '
 
-# Alias's for multiple directory listing commands
+# Aliases for multiple directory listing commands
 alias la='ls -Alh' # show hidden files
 alias ls='ls -aFh --color=always' # add colors and file type extensions
 alias lx='ls -lXBh' # sort by extension
@@ -181,11 +181,11 @@ alias ipview="netstat -anpl | grep :80 | awk {'print \$5'} | cut -d\":\" -f1 | s
 # Show open ports
 alias openports='netstat -nape --inet'
 
-# Alias's for safe and forced reboots
+# Aliases for safe and forced reboots
 alias rebootsafe='sudo shutdown -r now'
 alias rebootforce='sudo shutdown -r -n now'
 
-# Alias's to show disk space and space used in a folder
+# Aliases to show disk space and space used in a folder
 alias diskspace="du -S | sort -n -r |more"
 alias folders='du -h --max-depth=1'
 alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
@@ -193,7 +193,7 @@ alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
 
-# Alias's for archives
+# Aliases for archives
 alias mktar='tar -cvf'
 alias mkbz2='tar -cvjf'
 alias mkgz='tar -cvzf'
@@ -213,9 +213,9 @@ alias sha1='openssl sha1'
 
 # Use the best version of pico installed
 edit ()
-{
-	if [ "$(type -t jpico)" = "file" ]; then
-		# Use JOE text editor http://joe-editor.sourceforge.net/
+ {
+ 	if [ "$(type -t jpico)" = "file" ]; then
+ 		# Use JOE text editor http://joe-editor.sourceforge.net/
 		jpico -nonotice -linums -nobackups "$@"
 	elif [ "$(type -t nano)" = "file" ]; then
 		nano -c "$@"
