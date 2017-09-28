@@ -15,10 +15,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'jalvesaq/Nvim-R'
 
 " Plugins that I haven't learned how to use yet
 " Plugin 'ervandew/screen'
-" Plugin 'jalvesaq/Nvim-R'
 " Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " All of your Plugins must be added before the following line
@@ -122,31 +122,32 @@ let g:airline_symbols.whitespace = 'Ξ'
 " 	C-w C-++               resize viewports to equal split
 " 	C-w 10+                increase size of current pane by value
 
+let maplocalleader = "\\"
 " To open R in terminal rather than RGui (only necessary on OS X)
 " let vimrplugin_applescript = 0
 " let vimrplugin_screenplugin = 0
 " For tmux support
-let g:ScreenImpl = 'Tmux'
-let vimrplugin_screenvsplit = 1 " For vertical tmux split
-let g:ScreenShellInitialFocus = 'shell' 
+" let g:ScreenImpl = 'Tmux'
+" let vimrplugin_screenvsplit = 1 " For vertical tmux split
+" let g:ScreenShellInitialFocus = 'shell' 
 " instruct to use your own .screenrc file
-let g:vimrplugin_noscreenrc = 1
+" let g:vimrplugin_noscreenrc = 1
 " For integration of r-plugin with screen.vim
-let g:vimrplugin_screenplugin = 1
+" let g:vimrplugin_screenplugin = 1
 " Don't use conque shell if installed
-let vimrplugin_conqueplugin = 0
+" let vimrplugin_conqueplugin = 0
 " map the letter 'r' to send visually selected lines to R 
-let g:vimrplugin_map_r = 1
+" let g:vimrplugin_map_r = 1
 " see R documentation in a Vim buffer
-let vimrplugin_vimpager = "no"
+" let vimrplugin_vimpager = "no"
 "set expandtab
-set shiftwidth=4
-set tabstop=8
+" set shiftwidth=4
+"set tabstop=8
 " start R with F2 key
-map <F2> <Plug>RStart 
-imap <F2> <Plug>RStart
-vmap <F2> <Plug>RStart
+" map <F2> <Plug>RStart 
+" imap <F2> <Plug>RStart
+" vmap <F2> <Plug>RStart
 " send selection to R with space bar
-vmap <Space> <Plug>RDSendSelection 
+" vmap <Space> <Plug>RDSendSelection 
 " send line to R with space bar
-nmap <Space> <Plug>RDSendLine
+" nmap <Space> <Plug>RDSendLine
