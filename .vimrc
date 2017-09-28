@@ -14,10 +14,10 @@ Bundle 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'JuliaEditorSupport/julia-vim'
 
+" Plugins that I haven't learned how to use yet
 " Plugin 'ervandew/screen'
-" Plugin 'jalvesaq/Nvim-R'
-
 " Plugin 'jalvesaq/Nvim-R'
 " Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
