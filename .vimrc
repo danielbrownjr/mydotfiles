@@ -41,52 +41,19 @@ filetype plugin indent on    " required
 set number
 syntax on
 
+" Nerdtree settings
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen = 1
-
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-
 autocmd VimEnter * NERDTree
-
 " Always show statusline
 set laststatus=2
 
+" airline settings
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
-" set guifont=Ubuntu\ Mono\ derivative\ Powerline:10
-" set guifont=Ubuntu\ Mono
-" let g:Powerline_symbols = 'fancy'
-
-" air-line
 let g:airline_powerline_fonts = 1
-
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-" airline symbols
-" let g:airline_left_sep = ''
-" let g:airline_left_alt_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_right_alt_sep = ''
-" let g:airline_symbols.branch = ''
-" let g:airline_symbols.readonly = ''
-" let g:airline_symbols.linenr = ''
 
 " sample settings for vim-r-plugin and screen.vim
 " Installation 
@@ -122,6 +89,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 " 	C-w C-++               resize viewports to equal split
 " 	C-w 10+                increase size of current pane by value
 
+" Nvim-R settings 
 let maplocalleader = "\\"
 " To open R in terminal rather than RGui (only necessary on OS X)
 " let vimrplugin_applescript = 0
@@ -140,9 +108,9 @@ let maplocalleader = "\\"
 " let g:vimrplugin_map_r = 1
 " see R documentation in a Vim buffer
 " let vimrplugin_vimpager = "no"
-"set expandtab
+" set expandtab
 " set shiftwidth=4
-"set tabstop=8
+" set tabstop=8
 " start R with F2 key
 " map <F2> <Plug>RStart 
 " imap <F2> <Plug>RStart
@@ -151,3 +119,15 @@ let maplocalleader = "\\"
 " vmap <Space> <Plug>RDSendSelection 
 " send line to R with space bar
 " nmap <Space> <Plug>RDSendLine
+
+" Dan's creature comforts
+" better split manipulation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" better split opening
+set splitbelow
+set splitright
+
