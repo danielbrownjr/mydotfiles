@@ -14,7 +14,7 @@ Bundle 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'JuliaEditorSupport/julia-vim'
+" Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'jalvesaq/Nvim-R'
 
 " Plugins that I haven't learned how to use yet
@@ -54,6 +54,7 @@ set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 let g:airline_powerline_fonts = 1
+let g:powerline_pycmd = "py3"
 
 " sample settings for vim-r-plugin and screen.vim
 " Installation 
