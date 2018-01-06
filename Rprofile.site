@@ -1,6 +1,6 @@
 # set repository for downloads
 local({r <- getOption("repos")
-	r["CRAN"] <- "https://cran.mtu.edu"
+	r["CRAN"] <- "https://mirrors.sorengard.com/cran/"
 	options(repos=r)})
 
 # show curret working directory
@@ -18,9 +18,9 @@ options(continue="<~~ ")
 options(width = 75)
 
 # autoquit without asking to save
-q <- function (save="no", ...) {
-	quit(save=save, ...)
-}
+# q <- function (save="no", ...) {
+# 	quit(save=save, ...)
+# }
 
 # allows for tab-completion of package names
 utils::rc.settings(ipck=TRUE)
