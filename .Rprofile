@@ -1,6 +1,6 @@
 # set repository for downloads
 local({r <- getOption("repos")
-	r["CRAN"] <- "https://cran.mtu.edu"
+	r["CRAN"] <- "https://mirrors.sorengard.com/cran/" 
 	options(repos=r)})
 
 # show curret working directory
